@@ -1,0 +1,8 @@
+select regiao as 'região', sum(populacao) as Total
+from `estados`
+group by regiao
+order by Total desc
+
+select sum(populacao) as Total from estados
+
+select avg(populacao) as Total from estados
